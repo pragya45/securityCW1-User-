@@ -1,0 +1,96 @@
+.articlesContainer {
+  padding: 40px;
+  background: linear-gradient(to right, #5c95d1, #5584d3);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+.heading {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+  font-family: "Inika", serif;
+}
+
+.articleList {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+.articleItem {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #333;
+  transition: transform 0.3s;
+}
+
+.articleItem:hover {
+  transform: translateY(-10px);
+}
+
+.articleTitle {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-family: "Inika", serif;
+}
+
+.articleContent {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+  font-family: "Inika", serif;
+  line-height: 1.5;
+}
+
+.articleActions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.actionButton {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Inika", serif;
+  transition: background 0.3s;
+}
+
+.actionButton:hover {
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+}
+
+.actionButton.liked,
+.actionButton.saved {
+  background: linear-gradient(to right, #42e695, #3bb2b8);
+}
+
+.actionButton.liked:hover,
+.actionButton.saved:hover {
+  background: linear-gradient(to right, #3bb2b8, #42e695);
+}
+
+@media (max-width: 768px) {
+  .articleItem {
+    width: 100%;
+  }
+}
